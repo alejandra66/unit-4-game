@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="styelsheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+     <header>
+        <img class="title" src="assets/images/title.jpg" width="500" height="350px">
+    </header>
+    <div class="instructions">
+            <p>
+                <strong>Instructions:</strong> You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.
+            </p>
+            <p>
+                You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+            </p>
+    </div> 
+    <div class="container-fluid">
+            <div class="container" id="crystal-main">
+                <div class="col-6-md">
+                    <h2>Random Number: <span id="target-score"></span></h2>
+                </div>
+                <div class="col-6-md">
+                    <h2>Total Score: <span id="total-score"></span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-7-md crystal">
+                        <img src="assets/images/image-1.jpg" alt="blue" class="img" id="red">
+                    </div>
+                    <div class="col-7-md crystal">
+                        <img src="assets/images/image-2.jpg" alt="green" class="img" id="green">
+                    </div>
+                    <div class="col-7-md crystal">
+                        <img src="assets/images/image-3.jpg" alt="red" class="img" id="blue">
+                    </div>
+                    <div class="col-7-md crystal">
+                        <img src="assets/images/image-4.jpg" alt="yellow" class="img" id="purple">
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Wins: <span id="wins"></span></h4>
+                </div>
+                <div class="row">
+                    <h4>Losses: <span id="losses"></span></h4>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    </html>
+    
+    

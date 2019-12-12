@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     // Global variables
     
-    var targetNumber;
+    var randomNumber;
     var num1;
     var num2;
     var num3;
@@ -18,10 +18,10 @@ $(document).ready(function () {
         num2 = Math.floor(Math.random() * 11 + 1);
         num3 = Math.floor(Math.random() * 11 + 1);
         num4 = Math.floor(Math.random() * 11 + 1);
-        targetNumber = Math.floor(Math.random() * 101 + 19);
+        randomNumber = Math.floor(Math.random() * 101 + 19);
         userTotal = 0;
         $("#total-score").text(userTotal);
-        $("#target-score").text(targetNumber);
+        $("#random-number").text(randomNumber);
     }
 
     function initialize() {
@@ -29,20 +29,20 @@ $(document).ready(function () {
         num2 = Math.floor(Math.random() * 11 + 1);
         num3 = Math.floor(Math.random() * 11 + 1);
         num4 = Math.floor(Math.random() * 11 + 1);
-        targetNumber = Math.floor(Math.random() * 101 + 19);
-        $("#target-score").text(targetNumber);
+        randomNumber = Math.floor(Math.random() * 101 + 19);
+        $("#random-number").text(randomNumber);
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#total-score").text(userTotal);
     }
     function logic() {
-        if (userTotal === targetNumber) {
+        if (userTotal === randomNumber) {
             alert("You Win!");
             reset();
             wins++;
             $("#wins").text(wins);
         }
-        else if (userTotal > targetNumber) {
+        else if (userTotal > randomNumber) {
             alert("You lose!");
             reset();
             losses++;
